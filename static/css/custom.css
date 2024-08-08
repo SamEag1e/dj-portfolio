@@ -1,0 +1,40 @@
+.main-banner {
+    background: url('../uploads/banner-01.jpg')
+}
+.navbar .container .navbar-brand:hover{
+    color: white;
+}
+
+.project{
+    box-shadow:inset 4px 4px 4px rgba(0, 0, 0, 0.1), 4px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+}
+.portfolio {
+    background: url(../images/bg.png);
+}
+
+.project .description-container{
+    max-height: 4em;
+    overflow: hidden;
+
+}
+.project .project-name{
+    font-size: 2em;
+    font-weight: bold;
+}
+.project .tags{
+    font-weight: bold;
+}
+.project .read-more{
+    font-weight: bolder;
+    padding: 4px;
+}
+.all-projects,
+.project-card{
+    min-height: 100vh;
+}
+.projectimages .project-image{
+    width: 240px;
+    height: 240px;
+    border-radius: 24px;
+}

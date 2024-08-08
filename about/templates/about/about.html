@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    Sam Eagle - About
+{% endblock title %}
+
+{% block content %}
+    <section id="home" class="main-banner parallaxie">
+        <div class="heading">
+            <h1>Hello World! I'm Samad</h1>
+            <p>
+                I am a 27-year-old aspiring software engineer with a passion for both financial markets and technology.
+                <br>
+                My journey is fueled by a relentless pursuit of excellence, as I strive to become the best engineer I can be.
+                <br>
+                With a keen eye for detail and a genuine enthusiasm for problem-solving,
+                <br>
+                I am committed to contributing meaningfully to the world of software development.</p>
+            <h3 class="cd-headline clip is-full-width">
+                <span>I'm working on becoming a better </span>
+                <span class="cd-words-wrapper">
+                    <b class="is-visible">Software Engineer</b>
+                    <b>Python Developer</b>
+                    <b>Backend Developer</b>
+                    <b>Data Scientist</b>
+                </span>
+            </h3>
+        </div>
+    </section>
+
+    <div id="about" class="section wb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="message-box">                        
+                        <h2>About Me.</h2>
+                        <p> Ever since I laid eyes on my first computer at the age of 13, it’s been a constant companion.</p>
+                        <p>I took a detour into pro gaming—four intense years where victory and defeat hung on the edge of my reflexes. Gaming wasn’t just pixels; it was strategy and adrenaline.</p>
+                        <p>Next came a mechanical engineering degree—a foggy forest of confusion, but perhaps a necessary one. It didn’t quite fit, but it led me somewhere unexpected.</p>
+                        <p>Still haven't figured out why mechanical engineering when my heart danced to the rhythm of digital world?</p>
+                        <p>Enter financial markets and Bitcoin mining. CryptoCurrencies and Forex—volatile landscapes where fortunes danced. Amidst it all, I found my true passion: programming. The logic, the syntax—it just clicked.</p>
+                        <p></p>And now, armed with determination and a keyboard, I’m on the path to becoming a software engineer. No dreams, just code.</p>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+
+                <div class="col-md-6">
+                    <div class="right-box-pro wow fadeIn">
+                        <img src="{% static 'uploads/Meh.jpg' %}" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+{% endblock content %}

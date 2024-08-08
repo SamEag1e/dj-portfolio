@@ -1,2 +1,2 @@
-# dj-portfolio
-My Portfolio Django Web-App
+# portfolio
+My portfolio Django web application

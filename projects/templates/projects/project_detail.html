@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+    Sam Eagle - {{project.title}}
+{% endblock title %}
+
+{% block extrahead %}
+    <link rel="stylesheet" href="{% static 'css/project_detail.css' %}">
+{% endblock extrahead %}
+{% block content %}
+    <div class="main-box container my-5 min-vh-100 ">
+        <div class="project-info m-5">
+            <h1>{{project.title}}</h1>
+            <p><a href="{{project.link}}" target="_blank" class="links">Source Code</a></p>
+            <p>{{project.description}}</p>
+            <a href="{% url 'about' %}" class="links">Back to Home</a>
+            <br>
+            <a href="{% url 'projects' %}" class="links">Back to portfolio</a>
+        </div>
+        {% if project.images.all %}
+            <div class="images-back my-5">
+                <div class="images-box container">
+                    <div id="project-images" class="carousel slide">
+                        <div class="carousel-inner">
+                            {% for image in project.images.all %}
+                                <div class="project-img carousel-item {% if forloop.first %} active {% endif %}">
+                                    <img src="{{ image.image.url }}" class="each-image" alt="Project Image">
+                                </div>
+                            {% endfor %}
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#project-images" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#project-images" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+{% endblock content %}
