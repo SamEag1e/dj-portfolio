@@ -6,6 +6,18 @@ A Django-based portfolio web application that showcases your projects, allows vi
 * Project Showcase: Add and display projects with multiple pictures.
 * Contact Me: A form for visitors to get in touch with you.
 * About Me: A section to share information about yourself.
+
+## Database Setup
+You need to create the database first. Follow these steps:
+
+1. Install MySQL:
+  If you want to use other database management systems, you need to modify the settings.py file accordingly.
+   
+3. Create Database:
+  The default name used in settings.py is `portfolio`
+  ```
+  CREATE DATABASE `portfolio`;
+  ```
 ## Installation
 1. Clone the repository:
 ```
