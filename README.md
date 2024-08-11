@@ -27,11 +27,24 @@ git clone https://github.com/SamEag1e/dj-portfolio.git
 ```
 cd dj-portfolio
 ```
-3. Install the required dependencies:
+3. Create a virtual environment:
+```
+python -m venv env
+```
+4. Activate the virtual environment:
+* On Windows:
+```
+.\env\Scripts\activate
+```
+* On macOS and Linux:
+```
+source env/bin/activate
+```
+5. Install the required dependencies:
 ```
 pip install -r requirements.txt
 ```
-4. Set up environment variables:
+6. Set up environment variables:
 * Create a .env file in the project root directory.
 * Add the following environment variables:
 ```
@@ -42,11 +55,11 @@ DATABASE_PASSWORD = "your_database_password"
 EMAIL_HOST_USERNAME = "email@example.com"
 EMAIL_HOST_PASSWORD = "your_email_host_password"
 ```
-5. Run migrations:
+7. Run migrations:
 ```
 python manage.py migrate
 ```
-6. Start the development server:
+8. Start the development server:
 ```
 python manage.py runserver
 ```
@@ -61,3 +74,4 @@ python manage.py runserver
 * Open a pull request.
 ## License
 This project is licensed under the MIT License.
+
